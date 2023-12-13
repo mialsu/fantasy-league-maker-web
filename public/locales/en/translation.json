@@ -1,3 +1,21 @@
 {
-    "Kirjaudu sisään": "Log in"
+    "Kirjaudu sisään": "Log in",
+    "Kirjaudu": "Log in",
+    "Sähköposti": "Email",
+    "Salasana": "Password",
+    "Etunimi": "First name",
+    "Sukunimi": "Last name",
+    "Unohditko salasanasi": "Forgot your password",
+    "Eikö sinulla ole tiliä? Luo tili tästä" : "Don't have an account? Create one here",
+    "Etunimi on pakollinen": "First name is required",
+    "Sukunimi on pakollinen": "Last name is required",
+    "Sähköposti on virheellinen": "Email is invalid",
+    "Sähköposti on pakollinen": "Email is required",
+    "Salasanan on oltava vähintään 8 merkkiä pitkä": "Password must be at least 8 characters long",
+    "Salasana on pakollinen": "Password is required",
+    "Salasanat eivät täsmää": "Passwords do not match",
+    "Vahvista salasana": "Confirm password",
+    "Fantasy League Maker": "Fantasy League Maker",
+    "Luo tili": "Create account",
+    "Sähköpostiosoitteesi toimii jatkossa käyttäjätunnuksenasi": "Your email will be your username"
 }

@@ -1,3 +1,21 @@
 {
-    "Kirjaudu sisään:": "Kirjaudu sisään:"
+    "Kirjaudu sisään": "Kirjaudu sisään",
+    "Kirjaudu": "Kirjaudu",
+    "Sähköposti": "Sähköposti",
+    "Salasana": "Salasana",
+    "Etunimi": "Etunimi",
+    "Sukunimi": "Sukunimi",
+    "Unohditko salasanasi": "Unohditko salasanasi",
+    "Eikö sinulla ole tiliä? Luo tili tästä" : "Eikö sinulla ole tiliä? Luo tili tästä",
+    "Etunimi on pakollinen": "Etunimi on pakollinen",
+    "Sukunimi on pakollinen": "Sukunimi on pakollinen",
+    "Sähköposti on virheellinen": "Sähköposti on virheellinen",
+    "Sähköposti on pakollinen": "Sähköposti on pakollinen",
+    "Salasanan on oltava vähintään 8 merkkiä pitkä": "Salasanan on oltava vähintään 8 merkkiä pitkä",
+    "Salasana on pakollinen": "Salasana on pakollinen",
+    "Salasanat eivät täsmää": "Salasanat eivät täsmää",
+    "Vahvista salasana": "Vahvista salasana",
+    "Fantasy League Maker": "Fantasy League Maker",
+    "Luo tili": "Luo tili",
+    "Sähköpostiosoitteesi toimii jatkossa käyttäjätunnuksenasi": "Sähköpostiosoitteesi toimii jatkossa käyttäjätunnuksenasi"
 }
