@@ -1,17 +1,24 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-export interface ProtectedRouteProps {
-  isAuthenticated: boolean;
-  children: React.ReactNode;
-}
-
-const ProtectedRoute = ({ isAuthenticated, children }: ProtectedRouteProps) => {
-  if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
-
-  return children;
+type PrivateRouteProps = {
+  component: React.ComponentType;
+  authenticated?: boolean;
 };
 
-export default ProtectedRoute;
+const PrivateRoute: React.FC<PrivateRouteProps> = ({
+  component: Component,
+  authenticated,
+  ...rest
+}) => {
+  // Add your authentication logic here
+  const isAuthenticated = authenticated || false; // Use the authenticated prop or your own logic
+
+  return isAuthenticated ? (
+    <Component {...rest} />
+  ) : (
+    <Navigate to="/login" replace />
+  );
+};
+
+export default PrivateRoute;
