@@ -1,17 +1,34 @@
-import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: "#2b2d42",
+      light: "#717280",
+      dark: "#1f202f",
     },
     secondary: {
-      main: '#19857b',
+      main: "#8d99ae",
+      light: "#b3bbc9",
+      dark: "#646d7c",
+    },
+    success: {
+      main: "#3e8914",
+      light: "#7eb062",
+      dark: "#2c610e",
     },
     error: {
-      main: red.A400,
+      main: "#e15554",
+      light: "#eb8d8c",
+      dark: "#a03c3c",
     },
+    background: {
+      default: "#f9fbfc",
+      paper: "#f9fbfc",
+    },
+  },
+  typography: {
+    fontFamily: "Roboto, sans-serif",
   },
 });
 

@@ -12,14 +12,21 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
 import loginImage from "../assets/images/loginImage.jpg";
 import RegisterDialog from "../components/Dialogs/RegisterDialog";
 
+import { useDispatch } from "react-redux";
+import { login } from "../features/auth/authActions";
+import { AppDispatch } from "../store/store";
+
 export default function LoginView() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const { t } = useTranslation();
+  const theme = useTheme();
+  const dispatch = useDispatch<AppDispatch>();
 
   const formik = useFormik({
     initialValues: {
@@ -33,8 +40,7 @@ export default function LoginView() {
       password: Yup.string().required(t("Salasana on pakollinen")),
     }),
     onSubmit: (values) => {
-      console.log(values);
-      // handle form submission here
+      dispatch(login(values));
     },
   });
 
@@ -70,7 +76,7 @@ export default function LoginView() {
             <Typography component="h1" variant="h2">
               {t("Fantasy League Maker")}
             </Typography>
-            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+            <Avatar sx={{ m: 1, bgcolor: theme.palette.success.main }}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
@@ -115,6 +121,7 @@ export default function LoginView() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
+                color="success"
               >
                 {t("Kirjaudu")}
               </Button>

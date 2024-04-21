@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-
+import { useDispatch } from "react-redux";
 import CustomRouter from "./router";
-import { httpGetEnums } from "./services/enums";
+import { fetchEnums } from "./features/enums/enumActions";
+import { AppDispatch } from "./store/store";
 
 function App() {
+  const dispatch = useDispatch<AppDispatch>();
+
   useEffect(() => {
-    httpGetEnums().then((res) => {
-      console.log(res);
-    });
-  }, []);
+    dispatch(fetchEnums());
+  }, [dispatch]);
 
   return (
     <>
